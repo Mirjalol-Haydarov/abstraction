@@ -10,8 +10,11 @@ use App\Http\Requests\Product\ProductUpdateRequest;
 
 class ProductService extends AbstractionService
 {
-    protected $model = Product::class;
-    
+  
+    public function __construct()
+    {
+        $this->model = new Product;
+    }
     
 }
  
